@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <title>Spotify</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="leftContainer border ">
+      <div class="lFirst grey p">
+        <ul>
+          
+          <li><img src="/Spotify/img/logo.png" alt="Spotify"></li>
+          <li><i class="fa-solid fa-house"></i>Home</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+        </ul>
+      </div>
+      <div class="lSecond grey p">
+        <div class="row">
+          <p><i class="fa-solid fa-pager"></i>Your Library</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="box grey">
+          <h5>Create your first playlist</h5>
+          <p>It's easy, we'll help you</p>
+          <button>Create Playlist</button>
+        </div>
+        <div class="controlCon grey">
+          <div class="topBox">
+            <i class="fa-solid fa-maximize" id="maxBtn"></i>
+            <div class="imgBox">
+              <img src="/Spotify/img/default.png" alt="img">
+              <div class="songInfo">
+                <h5>Nothing Playing</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="controlors">
+            <i class="fas fa-1x fa-step-backward icon backward"></i>
+            <i class="far fa-1x fa-play-circle icon playPauseBtn btn1"></i>
+            <i class="fas fa-1x fa-step-forward icon forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightCon border grey p">
+      <nav>
+        <div class="lBox">
+          <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="rBox">
+          <button>Sign Up</button>
+          <button class="bg-wh">Logo in</button>
+        </div>
+      </nav>
+      <div class="songParent">
+        <div class="row">
+          <h4>Spotify Playlist</h4>
+          <p>Show all</p>
+        </div>
+        <div class="playlistCon">
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img1.jpeg" alt="img">
+            <h5>Arijit Sing Mix<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img2.jpeg" alt="img">
+            <h5>Mix Songs<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img3.jpeg" alt="img">
+            <h5>Lo-Fi Songs<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img4.jpeg" alt="img">
+            <h5>Relax Mix<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img5.jpeg" alt="img">
+            <h5>Hindi Songs Mix<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img6.jpeg" alt="img">
+            <h5>Sad Mix Songs<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img7.jpeg" alt="img">
+            <h5>Songs For You<h5>
+          </div>
+          <div class="albumBox grey">
+            <img src="/Spotify/img/img8.jpeg" alt="img">
+            <h5>Like Me Mix<h5>
+          </div>
+        </div>
+
+      </div>
+      <div class="songsContainer">
+        <div class="row2">
+          <i class="fa-solid fa-arrow-left"></i>
+          <h4>Mix Songs</h4>
+        </div>
+        <div class="songCon">
+
+        </div>
+      </div>
+      <div class="mainSongCon">
+        <i class="fa-solid fa-arrow-left"></i>
+        <div class="imgBox">
+          <img src="/Spotify/img/default.png" alt="imgage">
+        </div>
+
+        <div class="controlorBox">
+          <div class="timingBox">
+            <p class="currentTimePara">00:00</p>
+            <p class="durationTimePara">00:00</p>
+          </div>
+          <div class="rangeBox">
+            <input id="rangeBar" type="range" value="10">
+          </div>
+          <div class="controllorBox">
+            <div class="controllor">
+              <i class="fas fa-1x fa-step-backward icon backward"></i>
+              <i class="far fa-1x fa-play-circle icon playPauseBtn btn2"></i>
+              <i class="fas fa-1x fa-step-forward icon forward"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <audio id="audio" controls></audio>
+  <script src="/Spotify/album.js"></script>
+  <script src="/Spotify/script.js"></script>
+</body>
+
+</html>
